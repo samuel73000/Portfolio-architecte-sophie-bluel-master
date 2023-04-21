@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -68,7 +70,7 @@ h1{
 	font-family: 'Syne';
 	font-size: 22px;
 	font-weight: 800;
-	color: #B1663C
+	color: #B1663C;
 }
 
 h1 > span {
@@ -93,10 +95,12 @@ nav ul {
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
+	text-decoration: none ;
+	
 }
 
 li:hover {
-	color: #B1663C;
+	color: #B1663C ;
 }
 #introduction {
 	display: flex;
@@ -204,8 +208,78 @@ input[type="submit"]{
 }
 
 footer nav ul {
+	margin: 2em;
+	background-color: white;
 	display: flex;
 	justify-content: flex-end;
-	margin: 2em
+}
+/* page login */
+.lienLogin{
+	font-weight: 600;
+}
+.lienProjet{
+	text-decoration: none;
+	color: black;
+	
 }
 
+
+
+#login {
+	display: grid;
+	justify-content: center;
+	width: 20%;
+margin: auto;
+}
+#login > * {
+	text-align: center;
+
+}
+#login h2{
+	margin-bottom: 20px;
+}
+#login form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+#login input {
+	width: 379px;
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#login label {
+	margin: 2em 0 1em 0;
+}
+
+
+#login button{
+	margin-left: 26%;
+	width:179px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor:pointer;
+	color: white;
+	background-color: #1D6154;
+    border-radius: 60px ;
+	padding: 9px 25px 9px 25px;
+	border: 1px solid #1D6154;
+}
+#login button:active{
+	color: #1D6154;
+	background-color: white;
+}
+#login a{
+	color: #3D3D3D;
+	font-family: 'Work Sans';
+	margin-left: 31%;
+	
+
+}
+
+.footer{
+	margin-top: 20%;
+}
