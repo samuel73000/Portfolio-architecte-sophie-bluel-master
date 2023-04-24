@@ -5,7 +5,7 @@ let gallery = document.querySelector("#gallery");
 let all = document.querySelector("#idAll");
 let Objet = document.querySelector("#id1");
 let Appartements = document.querySelector("#id2");
-let HotelsRestaurants = document.querySelector("#id3")
+let HotelsRestaurants = document.querySelector("#id3");
 
 
 //  projets 
@@ -72,3 +72,16 @@ let HotelsRestaurants = document.querySelector("#id3")
         genererfigure(HotelsRestaurantsfiltre);//faire appararaitre ce qu'il y dans le filtre
     });
     
+ //function pour lien login 
+    function updateLoginButton(){
+        const loginButton = document.querySelector('.lienlogin');
+        const tokken = localStorage.getItem('token');
+        const isLogged = () => (tokken ? true : false);
+    
+        if(isLogged){
+            loginButton.innerHTML='Logout';
+        }else {
+            loginButton.innerHTML='Login'
+        }
+    }
+    updateLoginButton();

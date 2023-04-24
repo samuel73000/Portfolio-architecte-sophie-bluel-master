@@ -18,7 +18,7 @@
 		<ul>
 			<a class="lienProjet" href="./index.html"><li>projets</li></a>
 			<li>contact</li>
-			<li class="lienLogin">login</li>
+			<li class="lienlogin"></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -28,13 +28,14 @@
       <section id="login">
       <h2>Log In</h2>
       <form >
+        <p id="error"></p>
       <label for="email">Email</label>
       <input type="email" id="email">
       <br>
       <label for="mdp">Mot de passe</label>
        <input type="password"  id="mdp"> 
        <br>
-       <button>Se connecter</button>
+       <button id="submit">Se connecter</button>
        <br>
        <a href="#">Mot de passe oublié</a>
       </form>
