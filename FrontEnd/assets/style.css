@@ -214,9 +214,15 @@ footer nav ul {
 	justify-content: flex-end;
 }
 /* page login */
-.lienLogin{
+.Login{
 	font-weight: 600;
+	text-decoration: none;
+	color: black;
 	
+}
+.logout{
+	text-decoration: none;
+	color: black;
 }
 .lienProjet{
 	text-decoration: none;
