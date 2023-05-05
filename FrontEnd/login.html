@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sophie Bluel - Architecte d'intérieur</title>
+    <title>sophie-bluel</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <script type="module" src="/FrontEnd/js/login.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1 > Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-	<nav>
-		<ul>
-			<a class="lienProjet" href="./index.html"><li>projets</li></a>
-			<li>contact</li>
-			<li>login</li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
-
-    </header>
-    <main>
-      <section id="login">
-      <h2>Log In</h2>
-      <form action="action_page.php" method="post">
-      <label for="email">Email</label>
-      <input type="email" name="email"id="email">
-      <br>
-      <label for="psw">Mot de passe</label>
-       <input type="password" name="psw"  id="psw"> 
-       <br>
-       <button type="submit" id="submit">Se connecter</button>
-       <br>
-       <a href="#">Mot de passe oublié</a>
-      </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+    <nav>
         <ul>
-          <li>Mentions Légales</li>
+            <li>projets</li>
+            <li>contact</li>
+            <li>login</li>
+            <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
         </ul>
-      </nav>
-    </footer>
-  </body>
+    </nav>
+</header>
+<form action="action_page.php" method="post">
+    <h2>Log in</h2>
+  
+    <div class="container">
+        <div class="email-form">
+        <label for="email"><b>E-mail</b></label>
+        <input type="text" name="email" required>
+        </div>
+        <div class="password-form">
+        <label for="psw"><b>Mot de passe</b></label>
+        <input type="password" name="psw" required>
+        </div>
+        <div class="connexion-password">
+            <button type="submit">Se connecter</button>
+            <span class="psw"><a href="#">Mot de passe oublié</a></span>
+        </div>
+    </div>
+  </form> 
+  <script src="./login.js" defer></script>  
+</body>
 </html>

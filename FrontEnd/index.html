@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
@@ -8,12 +8,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- jQuery Confirm -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+	
 	<link rel="stylesheet" href="./assets/style.css">
-	<script type="module" src="/FrontEnd/js/works.js"></script>
 </head>
 <body>
+<header class="header-elements" style="display: none;"></header>
 <header>
-	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
 		<ul>
 			<li>projets</li>
@@ -37,22 +44,43 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
-		<!-- bouton filtre  -->
-        <div id="filtre">
-			<button id="idAll" class="btn">Tous</button>
-			<button id="id1" class="btn"></button>
-			<button id="id2" class="btn"></button>
-			<button id="id3" class="btn"></button>
+		<div class="titlewrapper">
+			<h2>Mes projets</h2>
+			<div class="lienmodal" style="display: none;" >
+				<img src="./assets/icons/edit_10.svg" alt="edit.svg" style="height: 15px;width: 15px;">
+				<a href="#modal1" class="js-modal">modifier</a>
+			</div>
 		</div>
-		<!-- projet -->
-		<div id="gallery" class="gallery"></div>
+		<div id="modal1" class="modal" aria-hidden="true" aria-labelledby="titlemodal" role="dialog" style="display: none;">
+			<div class="modal-wrapper js-modal-stop modal-background" >
+				<div class="boutons-fermer-retour">
+					<button class="bouton-retour" style="visibility: hidden;">
+						<img src="./assets/icons/retour.png" class="retour-bouton" alt="retour">
+					</button>
+					<button class="js-modal-close js-modal-stop">
+						<img src="./assets/icons/fermer.png" class= "fermer-bouton" alt="fermer">
+					</button>
+					
+				</div>
+				<h3>Galerie photo</h3>
+				<div class="wrapper-gallery">
+					<div class="gallery2"></div>
+					<div class="barre-bottom"></div>
+				</div>
+				<div class="bouttons">
+					<button class="ajouter-photo">Ajouter une photo</button>
+				<button class="supprimer-photo">Supprimer la galerie</button>
+				</div>
+			</div>
+			
+		</div>
+		<div class="filtres"></div>
+		<div class="gallery"></div>
 	</section>
-	<!-- section contact -->
 	<section id="contact">
 		<h2>Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
-		<form action="#" method="post">
+		<form class="formulaire" action="#" method="post">
 			<label for="name">Nom</label>
 			<input type="text" name="name" id="name">
 			<label for="email">Email</label>
@@ -63,7 +91,7 @@
 		</form>
 	</section>
 </main>
-<!-- footer -->
+
 <footer>
 	<nav>
 		<ul>
@@ -72,6 +100,12 @@
 	</nav>
 </footer>
 
+<script  src="index.js"></script>
+<script  src="login.js"></script>
+<script  src="app.js"></script>
+<script  src="./post.js"></script>
+<script  src="delete.js"></script>
 
 </body>
+
 </html>

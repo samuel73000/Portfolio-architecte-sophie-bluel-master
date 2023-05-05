@@ -62,5 +62,3 @@ if (typeof token === 'string' && token.length > 0){
     viderToken();
   });
 }
-
-
