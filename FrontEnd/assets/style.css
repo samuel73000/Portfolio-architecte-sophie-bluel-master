@@ -98,7 +98,7 @@ nav li {
 	font-size: 1.2em;
 }
 
-li:hover {
+a:hover {
 	color: #B1663C;
 }
 #introduction {
